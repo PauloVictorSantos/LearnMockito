@@ -26,7 +26,7 @@ public class GeradorDePagamento {
 		for(Leilao leilao:leiloesEncerrados) {
 			this.avaliador.avalia(leilao);
 			Pagamento novoPagamento = new Pagamento(avaliador.getMaiorLance(), Calendar.getInstance());
-			this.pagamentos.salva(novoPagamento);
+			this.pagamentos.salvar(novoPagamento);
 		}
 	}
 }
